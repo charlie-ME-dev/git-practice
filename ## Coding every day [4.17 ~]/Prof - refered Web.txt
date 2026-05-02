@@ -1,0 +1,24 @@
+[Content.4] Learn how dictionaries in Python work: create and modify key-value pairs using dict literals
+
+https://realpython.com/python-dicts/
+https://realpython.com/python-lists-tuples/
+
+_______________________________________________________________________________________________________________
+
+
+[Content.5] The Python typle data type's built-in methods
+
+https://realpython.com/python-tuple/
+
+https://realpython.com/python-lists-tuples/
+
+_______________________________________________________________________________________________________________
+
+[Content.6] The Python set data type's built-in methods
+
+https://realpython.com/python-sets/
+
+_______________________________________________________________________________________________________________
+
+
+

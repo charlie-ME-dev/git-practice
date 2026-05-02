@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하노이 탑 시뮬레이터</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; text-align: center; margin-top: 50px; }
+        .towers { display: flex; justify-content: center; gap: 60px; margin-top: 60px; }
+        .tower { 
+            position: relative; width: 120px; height: 150px; 
+            border-bottom: 8px solid #2d3436; 
+            display: flex; flex-direction: column-reverse; align-items: center; 
+        }
+        .pole { position: absolute; width: 12px; height: 100%; background: #b2bec3; z-index: -1; bottom: 0; border-radius: 5px 5px 0 0; }
+        .tower-name { position: absolute; bottom: -35px; font-weight: bold; font-size: 20px; }
+        .disk { height: 25px; border-radius: 5px; margin-bottom: 2px; transition: all 0.3s ease-in-out; border: 1px solid rgba(0,0,0,0.2); }
+        .d1 { width: 50px; background: #ff7675; }
+        .d2 { width: 80px; background: #74b9ff; }
+        .d3 { width: 110px; background: #55efc4; }
+        button { padding: 12px 24px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 10px; border: none; border-radius: 8px; background-color: #0984e3; color: white; transition: 0.2s; }
+        button:hover { background-color: #74b9ff; }
+        button:active { transform: scale(0.95); }
+        #message { font-size: 22px; font-weight: bold; margin-top: 30px; color: #d63031; height: 30px; }
+    </style>
+</head>
+<body>
+
+    <h2>하노이 탑 시뮬레이터 (원판 3개)</h2>
+    <button onclick="nextStep()">다음 단계</button>
+    <button onclick="reset()">초기화</button>
+    <div id="message">A → C 로 원판을 옮겨보세요!</div>
+
+    <div class="towers">
+        <div class="tower" id="peg-A">
+            <div class="pole"></div><div class="tower-name">A</div>
+        </div>
+        <div class="tower" id="peg-B">
+            <div class="pole"></div><div class="tower-name">B</div>
+        </div>
+        <div class="tower" id="peg-C">
+            <div class="pole"></div><div class="tower-name">C</div>
+        </div>
+    </div>
+
+    <script>
+        // 하노이 탑 3개일 때의 정답 이동 순서 (알고리즘의 결과)
+        const moves = [
+            ['A', 'C'], ['A', 'B'], ['C', 'B'],
+            ['A', 'C'], ['B', 'A'], ['B', 'C'], ['A', 'C']
+        ];
+        let currentStep = 0;
+        let state = {};
+
+        // 화면에 원판을 그리는 함수
+        function render() {
+            ['A', 'B', 'C'].forEach(peg => {
+                const pegEl = document.getElementById('peg-' + peg);
+                // 기존 원판 지우기
+                Array.from(pegEl.children).forEach(child => {
+                    if(child.className.includes('disk')) child.remove();
+                });
+                // 상태에 맞춰 원판 다시 그리기
+                state[peg].forEach(diskNum => {
+                    const diskEl = document.createElement('div');
+                    diskEl.className = 'disk d' + diskNum;
+                    pegEl.appendChild(diskEl);
+                });
+            });
+        }
+
+        // 초기화 버튼 기능
+        function reset() {
+            state = { 'A': [3, 2, 1], 'B': [], 'C': [] };
+            currentStep = 0;
+            document.getElementById('message').innerText = "A → C 로 원판을 옮겨보세요!";
+            render();
+        }
+
+        // 다음 단계 버튼 기능
+        function nextStep() {
+            if (currentStep >= moves.length) {
+                document.getElementById('message').innerText = "완료되었습니다! 🎉";
+                return;
+            }
+            const [from, to] = moves[currentStep];
+            
+            // 데이터 상에서 원판 이동
+            const movingDisk = state[from].pop();
+            state[to].push(movingDisk);
+            
+            // 텍스트 출력
+            document.getElementById('message').innerText = `${currentStep + 1}단계: ${from} → ${to}`;
+            currentStep++;
+            render();
+        }
+
+        // 파일 열자마자 초기화 상태로 세팅
+        reset();
+    </script>
+</body>
+</html>
