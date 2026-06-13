@@ -1,0 +1,99 @@
+수업은 오늘로서 마지막.
+다음주는 발표 예정.
+프로젝트... 
+잘 못하고 있다..
+연락을 주신 분이 몇 분 있다..
+-> 연락을 하는 사람은 나름대로 감안을 하실 것..
+
+우리가 배운 내용과 
+AI를 활용해서 만들었다면
+해당 소프트웨어를 발표하는 시간을 가질 것이다.
+
+다음주는 우리의 실력과 발표능력, 문서 제작 능력을 점검할 것이다.
+Syllabus에서 언급한 것처럼 30% 정도로 평가할 것이다.
+
+프로젝트 계획서... 미제출자 몇 명 있다..
+
+- 제출이나 발표하지 않은 사람에 대해서 평가가 없다.
+
+6/18에 기말고사 응시 예정이다.
+지난 중간고사.. 스타일 이해했을 것..
+기말고사 응시할 것이다.
+- 상대평가이다.
+
+나만 못했다고 생각하지 말고 최선을 다하다보면 결과는 좋게 나올 것.
+한학기 배운 것으로 만족하지말고 잘 가보자..
+
+15주차 18일에...
+
+1주는 축제라서 휴강함 -> 영상을 아직 못올리심.. 다가오는 주말에 올리실 예정. // 교재의 12장, 13장에 대한 내용.. => 시험에 출제하지는 않을 것이다.
+
+- 12장 => numpy내용. Tensorflow나 pytorch 공부하려면 numpy library는 기본적으로 이해하고 있어야 한다.
+
+
+한 주는 개교기념일이라서 휴강함. -> 6/11 진행할 것.
+
+_____________________________________
+13장 => Tkinter // Turtle graphic을 다룬다.
+Turtle graphic은 동영상에서도 제거할 예정..?
+Tkinter -> GUI programming할 때 알면 좋다.
+_____________________________________
+
+PPT & 영상은 보지만, 시험 문제에서는 제거될 것이다.
+
+- 다음주.. 발표 진행방식..
+10시까지 발표 다 하기가 어렵다.
+한 명씩 발표하면...
+안 하시는 분, 준비가 안되면 안할 것이다.
+
+준비가 된 사람은 할 것이다.
+다음주 목요일, 수요일 저녁까지 발표준비가 된 사람만 확인해서 발표를 진행할 것이다.
+
+- 목요일 오전//까지 제출하는 사람 대상으로 
+취합해서 준비할 것이다.
+
+코드는 Github에 올려주기.
+계획서를 올리지 않은 사람이라고 하더라도 이메일로 보내기.
+
+점수를 받지 않겠다고 작정하면 교수님이 어찌할 바가 없다.
+본인의 의지가 없는 사람에게 나랏님이 구제할 방안이 없다.
+본인이 하고자 하지 않으면 도울 수 없다.
+
+- 발표준비..
+
+_____________________________________
+11장 = 파이썬 다운 코딩
+
+Pythonic [파이썬 답다]
+UnPythonic [파이썬 답지 않다]
+
+- 간단히 언급을 하면, [IDLE 실행]
+
+import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts. -> 가독성이 중요하다
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+=> 파이썬의 모든 철학이 담겨있다.
+jupyter notebook을 업로드 해주실 것.
+
+_______________________________________________
+markdown cell이나 알아서 

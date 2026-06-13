@@ -1,0 +1,22 @@
+으뜸 파이썬 개정판 // 8장 모듈과 활용
+https://www.youtube.com/watch?v=-zems42DuUU
+https://www.youtube.com/watch?v=hj6OpY86DGE
+
+
+9장 예외처리
+___________________________________________________________
+Please feel free to download the attached file if you would like to review the concepts of Python exceptions and file I/O.
+
+The content was developed based on the information provided by the following web pages.
+
+https://realpython.com/python-exceptions/
+
+https://realpython.com/read-write-files-python/
+
+Please feel free to reach out if you have any questions about the material; I’m happy to help.
+
+﻿
+
+Best regards,
+Benjamin
+___________________________________________________________
