@@ -1,4 +1,12 @@
 """
+# If S is a subtype of T, 
+# then object of type T in a program may be replaced 
+# with objects of type S 
+# without altering any of the desirable properties of that program 
+# - Barbara Liskov
+
+
+
 📚 Day 3 - Inheritance Practice: Library Catalog System
 도서관 카탈로그 시스템
 
@@ -35,6 +43,12 @@ class LibraryItem:
         # - self._year (매개변수로 받음 / from parameter)
         # - self._is_checked_out (초기값 False / starts False)
         # - self._borrower (초기값 None / starts None)
+        self._title = title
+        self._item_id = item_id
+        self._year = year
+        self._is_checked_out = False
+        self._borrower = None
+
         pass
 
     def check_out(self, borrower_name):
@@ -45,6 +59,7 @@ class LibraryItem:
         #   - If already checked out, return "'{title}' is already checked out by {borrower}"
         #   - 대출 가능하면? → 상태 변경하고 "'{제목}' has been checked out by {이름}" 반환
         #   - If available, update status and return "'{title}' has been checked out by {borrower_name}"
+        
         pass
 
     def return_item(self):

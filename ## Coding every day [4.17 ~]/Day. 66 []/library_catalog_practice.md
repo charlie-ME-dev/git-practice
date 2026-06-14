@@ -1,3 +1,7 @@
+# If S is a subtype of T, then object of type T in a program may be replaced with objects of type S without altering any of the desirable properties of that program - Barbara Liskov
+
+---
+
 # 📚 Python 연습 (Day 3 - 상속): 도서관 카탈로그 시스템
 
 여러분, 안녕하세요! 상속 연습 셋째 날입니다. 오늘은 **객체의 타입을 확인하고** 클래스 계층 구조를 똑똑하게 활용하는 방법을 배워봅시다!
